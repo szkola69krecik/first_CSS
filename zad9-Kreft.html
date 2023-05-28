@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pytania dotyczące stylu zewnętrznego</h1>
+    <ol>
+        <li>
+            <h1>Składnia teoretyczna</h1>
+            <pre>
+                &lt;style&gt;
+                .zewnętrzny-styl {
+                    /* Definicje stylu zewnętrznego */
+                }
+                &lt;/style&gt;
+            </pre>
+           
+        </li>
+        <li>
+            <h1>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie, jako podłączenie stylu CSS?</h1>
+            <p>Styl zewnętrzny jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML za pomocą znacznika <code>&lt;link&gt;</code>. Może występować wiele razy w dokumencie, umożliwiając podłączenie wielu arkuszy styli CSS.</p>
+        </li>
+        <li>
+            <h1>Jak jest najprostsza forma wstawiania stylu zewnętrznego</h1>
+            <pre>
+                &lt;link rel="stylesheet" type="text/css" href="nazwa_pliku.css"&gt;
+            </pre>
+            <p>Najprostszą formą wstawiania stylu zewnętrznego jest użycie znacznika <code>&lt;link&gt;</code> z atrybutami <code>rel="stylesheet"</code>, <code>type="text/css"</code> i <code>href="nazwa_pliku.css"</code>.</p>
+        </li>
+        <li>
+            <h1>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasada musi być zachowana przy większej ilości dołączanych styli?</h1>
+            <p>Może być dołączonych wiele arkuszy styli do jednego dokumentu HTML. Aby zachować zasadę kaskadowości, należy pamiętać, że style z późniejszych arkuszy mają wyższy priorytet niż style z wcześniejszych arkuszy, chyba że są użyte selektory o większej specyficzności.</p>
+        </li>
+        <li>
+            <h1>Co się dzieje w przypadku konfliktów?</h1>
+            <p>W przypadku konfliktów, czyli gdy te same style są definiowane w różnych arkuszach styli podłączonych do tego samego dokumentu, zastosowane zostaną style z arkusza o wyższym priorytecie. Jeśli style mają taką samą specyficzność, zastosowane zostaną style z arkusza, który jest podłączony później w dokumencie.</p>
+        </li>
+        <li>
+            <h1>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1>
+            <p>Pliki arkuszy mogą być tworzone i edytowane za pomocą zwykłego edytora tekstowego, takiego jak Notepad, Notepad++, Sublime Text itp. Pliki te mają rozszerzenie ".css" i zawierają definicje stylów w postaci reguł CSS.</p>
+        </li>
+        <li>
+            <h1>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1>
+            <p>Specjalne edytory CSS, takie jak Adobe Dreamweaver, Visual Studio Code z rozszerzeniem CSS, czy Adobe Brackets, oferują bardziej zaawansowane funkcje edycji i podpowiedzi składni CSS, co ułatwia pracę z arkuszami styli. Można w nich tworzyć i edytować pliki arkuszy CSS w bardziej intuicyjny sposób.</p>
+        </li>
+        <li>
+            <h1>Jakie rozszerzenie posiadają pliki będące zewnętrznymi arkuszami styli?</h1>
+            <p>Pliki będące zewnętrznymi arkuszami styli mają rozszerzenie ".css".</p>
+        </li>
+        <li>
+            <h1>Jakie są zalety zewnętrznego arkusza styli?</h1>
+            <ul>
+                <li>Możliwość ponownego wykorzystania stylów w różnych dokumentach HTML.</li>
+                <li>Łatwość utrzymania i zarządzania stylami, ponieważ zmiany w arkuszu stylów mają wpływ na wszystkie strony, które go używają.</li>
+            </ul>
+        </li>
+        <li>
+            <h1>Uwagi na temat pisania w CSS</h1>
+            <p>Przy pisaniu w CSS warto pamiętać o:
+            <ul>
+                <li>Używaniu selektorów o odpowiedniej specyficzności, aby precyzyjnie określić, do których elementów mają być zastosowane style.</li>
+                <li>Dodawaniu odpowiednich komentarzy, aby ułatwić zrozumienie kodu i jego późniejsze utrzymanie.</li>
+                <li>Dostosowywaniu kodu dla różnych przeglądarek, jeśli wymaga tego zgodność z różnymi silnikami renderującymi.</li>
+            </ul>
+            </p>
+        </li>
+    </ol>
+</body>
+</html>

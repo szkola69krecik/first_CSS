@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Odpowiedzi dotyczące CSS</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Odpowiedzi dotyczące CSS</h1>
+    <ol>
+        <li>
+            <h1>Wymień oraz opisz dwie części selektora</h1>
+            <p>Selektor w CSS składa się z dwóch głównych części:</p>
+            <ol>
+                <li>
+                    <strong>Element docelowy:</strong> Jest to nazwa elementu HTML, do którego chcemy zastosować style. Może to być na przykład "div", "p", "h1" itp. Element docelowy określa, na jakie elementy HTML mają zostać zastosowane style.
+                </li>
+                <li>
+                    <strong>Atrybuty, klasy, identyfikatory:</strong> Są to dodatkowe atrybuty, które umożliwiają bardziej precyzyjne określenie, które elementy powinny być stylizowane. Przykłady to klasa (np. ".klasa"), identyfikator (np. "#identyfikator") lub inne atrybuty (np. "[name='wartość']"). Część ta pozwala na selekcję konkretnych elementów na podstawie ich atrybutów lub cech.
+                </li>
+            </ol>
+        </li>
+        <li>
+            <h1>Znaczenie nawiasów klamrowych {...}</h1>
+            <p>Nawiasy klamrowe ("{ }") w CSS są używane do grupowania deklaracji stylów dla danego selektora. Wewnątrz nawiasów klamrowych znajdują się poszczególne deklaracje stylów, gdzie każda deklaracja składa się z właściwości i wartości CSS. Nawiasy klamrowe określają zakres, w którym mają zostać zastosowane określone style dla danego selektora.</p>
+        </li>
+        <li>
+            <h1>Cechy</h1>
+            <p>W CSS cechy są częścią deklaracji stylu i określają aspekty formatowania elementów. Oto kilka cech często używanych w CSS:</p>
+            <ul>
+                <li><strong>Kolor (color):</strong> Określa kolor tekstu.</li>
+                <li><strong>Tło (background):</strong> Określa tło elementu.</li>
+                <li><strong>Czcionka (font):</strong> Określa styl czcionki, rozmiar i rodzaj.</li>
+                <li><strong>Wysokość (height):</strong> Określa wysokość elementu.</li>
+                <li><strong>Szerokość (width):</strong> Określa szerokość elementu.</li>
+                <li><strong>Marginesy (margin):</strong> Określają odstępy zewnętrzne elementu od innych elementów.</li>
+                <li><strong>Wypełnienie (padding):</strong> Określa odstępy wewnętrzne elementu.</li>
+            </ul>
+        </li>
+        <li>
+            <h1>Wartości</h1>
+            <p>Wartości w CSS określają konkretne ustawienia dla danej cechy. Przykłady wartości to:</p>
+            <ul>
+                <li><strong>Kolor:</strong> Może to być nazwa koloru (np. "red"), kod koloru w formacie heksadecymalnym (np. "#FF0000") lub wartość RGB (np. "rgb(255, 0, 0)").</li>
+                <li><strong>Czcionka:</strong> Może to być nazwa czcionki (np. "Arial"), rozmiar czcionki w pikselach (np. "14px") lub inny format (np. "italic", "bold").</li>
+                <li><strong>Wysokość/Szerokość:</strong> Może to być wartość wyrażona w pikselach (np. "200px"), procentach (np. "50%") lub innym jednostkach.</li>
+                <li><strong>Marginesy/Wypełnienie:</strong> Może to być wartość wyrażona w pikselach (np. "10px"), procentach (np. "5%") lub innym jednostkach, lub też wartość "auto" dla automatycznego ustawienia.</li>
+            </ul>
+        </li>
+        <li>
+            <h1>Kiedy stosujemy znak średnika (;), kiedy nie jest konieczny</h1>
+            <p>Znak średnika (";") w CSS jest używany do oddzielenia kolejnych deklaracji stylu w bloku deklaracji. Jest on konieczny po każdej deklaracji stylu, z wyjątkiem ostatniej deklaracji w bloku. Znak średnika informuje przeglądarkę, że dana deklaracja się kończy, a kolejna się zaczyna. Jeśli nie użyjemy średnika tam, gdzie jest wymagany, to styl może nie być poprawnie zastosowany.</p>
+        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Wymień rodzaje selektorów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wymień rodzaje selektorów</h1>
+    <ol>
+        <li>
+            <h2>I sposób podłączania styli do strony.</h2>
+            <p>Składnia teoretyczna:</p>
+            &lt;head&gt; <br>
+                (...)<br>
+                &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;<br>
+                (...)<br>
+            &lt;/head&gt;
+        </li>
+        <li>
+            <h2>II sposób podłączania styli do strony.</h2>
+            <p>Styl lokalny pozwala na nadanie formatowania konkretnemu pojedynczemu elementowi 
+                strony. Jest wstawiany w tej samej linii, w której znajduje się element formatowany. 
+                O tym, który to będzie element, decyduje słowo kluczowe "selektor". <br>
+                Składnia teoretyczna:</p> <pre>&lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;
+                </pre>
+                <p>Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (nagłówek), td 
+                    (komórka tabeli) i inne. To właśnie elementom znajdującym się pomiędzy tymi znacznikami, 
+                    nadajemy atrybuty formatowania.
+                    Jako "cecha" czy inaczej własność bądź właściwość (ang. "property") należy wpisać o jakie 
+                    konkretnie atrybuty formatowania nam chodzi (np. kolor tekstu - color). 
+                    Jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone 
+                    średnikami.
+                    Jako wyraz "wartość" (w deklaracji stylu) wpisujemy dokładną wartość atrybutu (np. dla 
+                    koloru tekstu będzie to: red, blue czy też #31F4A5 itd.). Wartość zależy ściśle od cechy, po 
+                    której stoi w deklaracji. 
+                    Opis wszystkich cech później.</p>
+        </li>
+        <li>
+            <h2>III sposób podłączania styli do strony.</h2>
+            <p>Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami &lt;head&gt; a 
+                &lt;/head&gt;). Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, 
+            występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż 
+            domyślne).
+            ewnętrzny arkusz stylów składnia teoretyczna:</p>
+            <pre>&lt;head&gt;
+                (...)
+                 &lt;style type="text/css"&gt;
+                 /* &lt;![CDATA[ */
+                 selektor1 { cecha: wartość; cecha2: wartość2... }
+                 selektor2 { cecha: wartość; cecha2: wartość2... }
+                 (...)
+                 /* ]]&gt; */
+                 &lt;/style&gt;
+                (...)
+                &lt;/head&gt;
+                </pre>
+        </li>
+    </ol>
+</body>
+</html>
