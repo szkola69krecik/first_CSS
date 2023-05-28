@@ -31,3 +31,8 @@ table {
     height: 50%;
     width: 50%;
   }
+
+  p {
+    color: red;
+    font-size: 49px;
+  }
